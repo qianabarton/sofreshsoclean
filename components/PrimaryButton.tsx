@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from '../assets/styles/Styles';
 import {Text, TouchableOpacity} from 'react-native';
 
-const PrimaryButton = ({onPress, title}) => {
+export default function PrimaryButton({onPress, title}){
     return (
         <TouchableOpacity
             onPress={onPress}
@@ -12,5 +12,3 @@ const PrimaryButton = ({onPress, title}) => {
         </TouchableOpacity>
     );
 }
-
-export default PrimaryButton;

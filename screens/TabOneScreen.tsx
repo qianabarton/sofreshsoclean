@@ -4,7 +4,7 @@ import {View, Text, Alert, Button, TouchableOpacity} from 'react-native';
 
 import PrimaryButton from '../components/PrimaryButton';
 
-export default function TabOneScreen({ navigation }) {
+export default function TabOneScreen({navigation}) {
     return (
 
         <View style={styles.viewOuter}>
@@ -19,9 +19,9 @@ export default function TabOneScreen({ navigation }) {
                     <Text style={styles.sublabel}>1500 Main St Palmdale CA</Text>
                 </View>
                 <View style={styles.spacer30}/>
-                <PrimaryButton 
-                onPress={() => navigation.navigate('RequestScreen')} 
-                title="Request"/>
+                <PrimaryButton
+                    onPress={() => navigation.navigate('RequestScreen')}
+                    title="Request"/>
             </View>
         </View>
     );
