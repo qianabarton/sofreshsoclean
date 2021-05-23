@@ -32,9 +32,11 @@ export default function BottomTabNavigator() {
             <BottomTab.Screen
                 name="TabOne"
                 component={TabOneNavigator}
-                options={{
-                tabBarIcon: ({color}) => <TabBarIcon name="ios-code" color={color}/>
-            }}/>
+                
+                options={
+                    {tabBarIcon: ({color}) => <TabBarIcon name="ios-code" color={color}/>}
+                    
+                    }/>
             <BottomTab.Screen
                 name="TabTwo"
                 component={TabTwoNavigator}
@@ -69,22 +71,12 @@ function TabOneNavigator() {
                 name="TabOneScreen"
                 component={TabOneScreen}
                 options={{
-                headerTitle: 'Tab One Title'
-            }}/>
-            <TabOneStack.Screen
-                name="RequestScreen"
-                component={RequestScreen}
-                options={{
-                headerTitle: 'Request Wash'
-            }}/>
-            <TabOneStack.Screen
-                name="RequestConfirmScreen"
-                component={RequestConfirmScreen}/>
+                headerShown: false}}/>
         </TabOneStack.Navigator>
     );
 }
 
-const TabTwoStack = createStackNavigator < TabTwoParamList > ();
+const TabTwoStack = createStackNavigator();
 
 function TabTwoNavigator() {
     return (
@@ -92,9 +84,7 @@ function TabTwoNavigator() {
             <TabTwoStack.Screen
                 name="TabTwoScreen"
                 component={TabTwoScreen}
-                options={{
-                headerTitle: 'Tab Two Title'
-            }}/>
+                options={{headerShown: false}}/>
         </TabTwoStack.Navigator>
     );
 }

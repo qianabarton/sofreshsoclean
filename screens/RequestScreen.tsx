@@ -59,6 +59,10 @@ export default class RequestScreen extends Component {
         }
     }
 
+    onPressNext = () => {
+        
+    }
+
     render() {
         return (
             <View style={styles.viewOuter}>
