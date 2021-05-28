@@ -6,9 +6,9 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'flex-start',
         backgroundColor: theme.PRIMARY_BG,
-        paddingVertical: 30,
         paddingHorizontal: 20
     },
+
     container: {
         width: '100%'
     },
@@ -58,5 +58,8 @@ export default StyleSheet.create({
     },
     spacer30: {
         height: 30
+    },
+    spacer10: {
+        height: 10
     }
 })

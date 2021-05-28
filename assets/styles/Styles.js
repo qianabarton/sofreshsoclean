@@ -7,9 +7,9 @@ export default StyleSheet.create({
         backgroundColor: theme.PRIMARY_BG
     },
     container: {
-        alignItems: 'left',
+        alignItems: 'flex-start',
         backgroundColor: theme.PRIMARY_BG,
-        margin: '20px'
+        margin: 20
     },
     subtitle: {
         fontSize: theme.FONT_SIZE_SM,
@@ -23,7 +23,7 @@ export default StyleSheet.create({
         fontWeight: theme.FONT_WEIGHT_BOLD,
         color: theme.FONT_DARK,
         textAlign: 'left',
-        lineHeight: '50px'
+        lineHeight: 50
     },
     label: {
         fontSize: theme.FONT_SIZE_MD,
@@ -39,11 +39,11 @@ export default StyleSheet.create({
         textAlign: 'left'
     },
     primaryButton: {
-        height: '40px',
+        height: 40,
         backgroundColor: theme.PRIMARY_COLOR,
         display: 'flex',
         justifyContent: 'center',
-        borderRadius: '5px'
+        borderRadius: 5
     },
     primaryButtonText: {
         color: '#FFFFFF',
@@ -56,6 +56,6 @@ export default StyleSheet.create({
         width: '80%',
     },
     spacer30: {
-        height: '30px'
+        height: 30
     }
 });
