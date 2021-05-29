@@ -4,7 +4,8 @@ import theme from './theme.style.js';
 export default StyleSheet.create({
     selectView: {
         flex: 0,
-        flexDirection: 'column'
+        flexDirection: 'column',
+        
         },
     vehicleRow: {
         flex: 1,

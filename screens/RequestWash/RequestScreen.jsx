@@ -88,25 +88,26 @@ export default class RequestScreen extends Component {
     ];
 
     return (
-      <SafeAreaView style={styles.flexView}>
+      <View style={styles.requestView}>
         <View style={styles.container}>
-          <View>
-            <Text>{this.address}</Text>
-            <Text>{this.state.vehicle}</Text>
-            <Text>{this.state.wash}</Text>
-            <Text>Time</Text>
+          <Text style={styles.washInfoText}>{this.address}</Text>
+          <Text style={styles.washInfoText}>{this.state.vehicle}</Text>
+          <Text style={styles.washInfoText}>{this.state.wash}</Text>
+          <Text style={styles.washInfoText}>Time</Text>
+        </View>
 
-            <View style={styles.spacer30} />
+        <View style={styles.selectPage}>
+          <View style={styles.flex1}>
             <>{this.returnView(this.state.viewIndex)}</>
-            <View style={styles.spacer30} />
-
+          </View>
+          <View style={styles.flex2}>
             <PrimaryButton
               onPress={() => this.onPressNext()}
               title={this.returnButtonText(this.state.viewIndex)}
             />
           </View>
         </View>
-      </SafeAreaView>
+      </View>
     );
   }
 }

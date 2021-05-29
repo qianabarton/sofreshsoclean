@@ -52,9 +52,7 @@ export default function Navigation() {
           name="RequestConfirmScreen"
           component={RequestConfirmScreen}
           options={{
-            headerBackTitle: " ",
-            headerShown: true,
-            title: "",
+            headerShown: false
           }}
         />
       </Stack.Navigator>
